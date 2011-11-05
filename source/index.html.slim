@@ -1,0 +1,12 @@
+- content_for :head do
+  title Enric Lluelles
+
+#greeting
+  h1 Hi! What's up?
+  h1 I'm&nbspEnric&nbspLluelles
+  #who
+    #whoyouask.hidden Who, you ask?
+    == image_tag("arrow.png", id: "arrow", class: "hidden")
+    #thisguy.hidden This guy
+  #mugshot.hidden
+    == image_tag("photo.png", id: "photo")

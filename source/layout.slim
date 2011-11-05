@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"
+    == stylesheet_link_tag :site
+    == stylesheet_link_tag "http://fonts.googleapis.com/css?family=Chivo","http://fonts.googleapis.com/css?family=Loved+by+the+King"
+    == yield_content :head
+
+  body class="#{page_classes}"
+    #main.main
+      == yield
+
+    script src="/javascripts/application.js"
