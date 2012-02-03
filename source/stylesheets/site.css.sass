@@ -69,17 +69,18 @@ a
     height: 0px
     line-height: 0px
     visibility: hidden
+    overflow: hidden
 
 #who
   font-size: 2.2em
   height: 242px
   @include transition(height 0.3s linear, opacity 0.3s ease-out)
   &.hidden
+    overflow: hidden
     height: 0
     opacity: 0
 
 #content
   text-align: center
-  @include transition(opacity 0.5s ease-in-out)
   &.hidden
-    opacity: 0
+    display: none
