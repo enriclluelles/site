@@ -162,10 +162,22 @@ window.log = function(){
 
 }).call(this);
 (function() {
+  var hide, show;
+
+  show = function(what) {
+    return $(what).removeClass('hidden');
+  };
+
+  hide = function(what) {
+    return $(what).addClass('hidden');
+  };
 
   $(function() {
-    $('div, h1, img').removeClass('hidden');
-    return $('#who').addClass('hidden');
+    setTimeout(show, 500, '#whoyouask');
+    setTimeout(show, 2000, '#arrow');
+    setTimeout(show, 2200, '#mugshot, #thisguy');
+    setTimeout(hide, 5000, '#who');
+    return setTimeout(show, 5500, '#content');
   });
 
 }).call(this);

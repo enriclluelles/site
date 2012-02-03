@@ -1,4 +1,3 @@
-@import url(base.css);
 body {
   font-family: sans-serif;
   color: #2a2a2a; }
@@ -15,53 +14,71 @@ a {
 #greeting {
   font-family: "Loved by the King", sans-serif;
   text-align: center; }
-  #greeting h1, #greeting h2 {
+  #greeting h1 {
     line-height: 0.7em;
     font-weight: normal;
     font-size: 3em;
     margin-bottom: 10px; }
 
-img#arrow {
+#arrow img {
   height: 98px;
   width: 54px;
-  -moz-transition: height 0.2s linear 2s;
-  -webkit-transition: height 0.2s linear 2s;
-  -o-transition: height 0.2s linear 2s;
-  transition: height 0.2s linear 2s; }
-  img#arrow.hidden {
-    height: 0px; }
+  -moz-transition: height 0.2s linear;
+  -webkit-transition: height 0.2s linear;
+  -o-transition: height 0.2s linear;
+  transition: height 0.2s linear; }
+#arrow.hidden img {
+  height: 0px; }
 
-#mugshot, #thisguy {
+#mugshot {
+  opacity: 1; }
+  #mugshot img {
+    -moz-transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear; }
+  #mugshot.hidden img {
+    opacity: 0;
+    visibility: hidden; }
+
+#thisguy {
   opacity: 1;
-  -moz-transition: opacity 0.5s linear 2.2s;
-  -webkit-transition: opacity 0.5s linear 2.2s;
-  -o-transition: opacity 0.5s linear 2.2s;
-  transition: opacity 0.5s linear 2.2s; }
-  #mugshot.hidden, #thisguy.hidden {
-    opacity: 0; }
+  -moz-transition: opacity 0.5s linear;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear; }
+  #thisguy.hidden {
+    opacity: 0;
+    visibility: hidden; }
 
 #whoyouask {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  -moz-transition: opacity 0.5s ease-in-out 0.5s, line-height 0.5s linear 0.5s;
-  -webkit-transition: opacity 0.5s ease-in-out 0.5s, line-height 0.5s linear 0.5s;
-  -o-transition: opacity 0.5s ease-in-out 0.5s, line-height 0.5s linear 0.5s;
-  transition: opacity 0.5s ease-in-out 0.5s, line-height 0.5s linear 0.5s; }
+  -moz-transition: opacity 0.5s ease-in-out, line-height 0.5s linear;
+  -webkit-transition: opacity 0.5s ease-in-out, line-height 0.5s linear;
+  -o-transition: opacity 0.5s ease-in-out, line-height 0.5s linear;
+  transition: opacity 0.5s ease-in-out, line-height 0.5s linear; }
   #whoyouask.hidden {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     height: 0px;
     line-height: 0px;
     visibility: hidden; }
 
 #who {
-  font-family: "Loved by the King", sans-serif;
   font-size: 2.2em;
   height: 242px;
-  -moz-transition: height 0.3s linear 5s, opacity 0.3s ease-out 5s;
-  -webkit-transition: height 0.3s linear 5s, opacity 0.3s ease-out 5s;
-  -o-transition: height 0.3s linear 5s, opacity 0.3s ease-out 5s;
-  transition: height 0.3s linear 5s, opacity 0.3s ease-out 5s; }
+  -moz-transition: height 0.3s linear, opacity 0.3s ease-out;
+  -webkit-transition: height 0.3s linear, opacity 0.3s ease-out;
+  -o-transition: height 0.3s linear, opacity 0.3s ease-out;
+  transition: height 0.3s linear, opacity 0.3s ease-out; }
   #who.hidden {
     height: 0;
+    opacity: 0; }
+
+#content {
+  text-align: center;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+  #content.hidden {
     opacity: 0; }
