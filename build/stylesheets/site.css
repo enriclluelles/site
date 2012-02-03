@@ -61,7 +61,8 @@ a {
     opacity: 0;
     height: 0px;
     line-height: 0px;
-    visibility: hidden; }
+    visibility: hidden;
+    overflow: hidden; }
 
 #who {
   font-size: 2.2em;
@@ -71,14 +72,11 @@ a {
   -o-transition: height 0.3s linear, opacity 0.3s ease-out;
   transition: height 0.3s linear, opacity 0.3s ease-out; }
   #who.hidden {
+    overflow: hidden;
     height: 0;
     opacity: 0; }
 
 #content {
-  text-align: center;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out; }
+  text-align: center; }
   #content.hidden {
-    opacity: 0; }
+    display: none; }
