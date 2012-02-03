@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 bundle exec middleman build
-git add -f build
+mv build tmpbuild
 git co static
-git commit -am "Pushit"
+rm -rf build && mv tmpbuild build
+git add -A build
+git commit -m "Pushit"
 git push heroku static:master -f
 git co master
