@@ -10,3 +10,12 @@
     #thisguy.hidden This guy
   #mugshot.hidden
     == image_tag("photo.png", id: "photo")
+
+#content.hidden
+
+  p
+    | I'm from Cervera, Catalunya
+  p
+    == "I #{link_to("write code", "http://github.com/enriclluelles")}, "
+    == "I #{link_to("tweet", "http://twitter.com/enriclluelles")}, "
+    == "I #{link_to("blog", "/blog")}"
